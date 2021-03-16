@@ -22,8 +22,9 @@ while line:
     MathScaledScore = fields[8]
     MathCompPercentile = fields[9]
     MathCompStanine = fields[10]
+    StudentId = fields[11]
     #
-    canvas = Canvas('/Users/ehiggins/Desktop/gsf/output/'+grade+"_"+last_name+"_"+first_name+".pdf")
+    canvas = Canvas('/Users/ehiggins/Desktop/gsf/output/'+grade+"_"+StudentId+".pdf")
     canvas.setPageSize(size=(2034, 1056))
     canvas.drawImage("/Users/ehiggins/Desktop/gsf/template.png", 0, 0, 2034, 1056)
     #canvas.create_text(574, 133, fill="darkblue", font=("Purisa italic bold", 12), text= "Foo Bar")
